@@ -1,9 +1,11 @@
 Angular 2 Boilerplate
 https://github.com/steveblue/ng2-boilerplate
 
-This project is starter code for a web app built with Angular 2, based off an earlier angular-boilerplate https://github.com/steveblue/angular-boilerplate.
+This project is starter code for a web app built with Angular 2.
 
 This boilerplate is simple, yet powerful. It includes gulp tasks that lint and compile Typescript, compile SASS to CSS with libsass and PostCSS, and creates build directories for local and production development environments. It also includes a livereload server for local development so you can get up and running quickly.
+
+NOTE: Angular CLI was released and is an interesting and powerful solution that does the same thing and is built by the open source community. It is strongly recommended to use Angular CLI. https://cli.angular.io
 
 ## Dependencies ##
 
@@ -76,3 +78,5 @@ This boilerplate is the starter code for any Angular Project. It includes a gulp
 `gulp prod` will copy all files outlined in config.paths.json to /build/prod/ and create a workable build that can be deployed to a staging / production server. Modify the file globs that are copied in config.paths.json and/or modify the gulp tasks as needed.
 
 head.js is used to inject all dependencies prior to bootstrapping the app.
+
+This boilerplate is based off an earlier project I created called angular-boilerplate. https://github.com/steveblue/angular-boilerplate

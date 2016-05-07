@@ -19,7 +19,9 @@ module.exports = {
       'node_modules/rxjs/bundles/Rx.js',
       'node_modules/angular2/bundles/angular2.dev.js',
       'node_modules/angular2/bundles/router.dev.js',
+      'node_modules/angular2/bundles/http.dev.js',
       'bower_components/headjs/dist/1.0.0/head.js',
+      'node_modules/d3/d3.js'
 
 
     ],
@@ -29,8 +31,10 @@ module.exports = {
       'node_modules/systemjs/dist/system.src.js',
       'node_modules/rxjs/bundles/Rx.js',
       'node_modules/angular2/bundles/angular2.dev.js',
-      'node_modules/angular2/bundles/node_modules/angular2/bundles/router.dev.js',
+      'node_modules/angular2/bundles/router.dev.js',
+      'node_modules/angular2/bundles/http.dev.js',
       'bower_components/headjs/dist/1.0.0/head.load.min.js',
+      'node_modules/d3/d3.min.js'
 
 
     ],
@@ -62,7 +66,7 @@ module.exports = {
   symlink: [
     '!app/components/.new/**/*.*',
     'app/**/*.js',
-    'app/**/*.scss',
+    'app/src/**/*.css',
     'app/**/*.json',
     'app/**/*.html',
     'app/*.html'
@@ -70,7 +74,7 @@ module.exports = {
 
   copy: [
     '!app/components/.new/**/*.*',
-    'app/**/*.scss',
+    'app/src/**/*.css',
     'app/**/*.json',
     'app/**/*.html',
     'app/*.html'
@@ -94,8 +98,10 @@ module.exports = {
 
 // App SASS
   sass: {
-    src:    ['app/sass/**/*.scss','app/sass/*.scss'],
+    src: ['app/sass/**/*.scss','app/sass/*.scss'],
+    ts: ['app/src/**/*.scss'],
     sass:   'app/sass',
+    tsOut:  devDir + '/src',
     dev:    devDir + '/css',
     prod:   prodDir + '/css'
   },

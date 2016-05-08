@@ -1,4 +1,4 @@
-import { Component } from "angular2/core";
+import { Component } from '@angular/core';
 
 @Component({
   template: `
@@ -11,6 +11,6 @@ import { Component } from "angular2/core";
 export class Default {
   message: String;
   constructor() {
-    this.message = 'Hello Angular 2!';
+    this.message = 'Hello Angular 2 RC1!';
   }
 }

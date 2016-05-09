@@ -5,7 +5,7 @@ This project is starter code for a web app built with Angular 2. Updated for RC1
 
 This boilerplate is simple, yet powerful. It includes gulp tasks that lint and compile Typescript, compile SASS to CSS with libsass and PostCSS, and creates build directories for local and production development environments. It also includes a livereload server for local development so you can get up and running quickly.
 
-NOTE: Angular CLI was released and is an interesting and powerful solution that does more is built by the open source community. It is strongly recommended to use Angular CLI. https://cli.angular.io
+NOTE: Angular CLI was released and is an interesting and powerful solution that does more is built by the open source community.  https://cli.angular.io
 
 ## Dependencies ##
 

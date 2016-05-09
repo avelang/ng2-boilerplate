@@ -1,6 +1,6 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { Component, provide } from '@angular/core';
-import { ROUTER_PROVIDERS, RouteConfig, RouterOutlet, RouterLink } from '@angular/router-deprecated';
+import { ROUTER_PROVIDERS, ROUTER_DIRECTIVES, Router, Routes } from '@angular/router';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 import {About} from './src/views/about';
@@ -11,21 +11,25 @@ import {Default} from './src/views/default';
 @Component({
   selector: 'app',
   template: `
-    <a [routerLink]="['./Default']">Home</a>
-	  <a [routerLink]="['./About']">About</a>
+    <a [routerLink]="['/']">Home</a>
+	  <a [routerLink]="['/about']">About</a>
     <div class="outer-outlet">
       <router-outlet></router-outlet>
     </div>
   `,
-  directives: [RouterOutlet, RouterLink]
+  directives: [ROUTER_DIRECTIVES]
 })
 
-@RouteConfig([
-  {path:'/', name: 'Default', component: Default},
-  {path:'/about', name: 'About', component: About}
+@Routes([
+  {path:'/', component: Default},
+  {path:'/about', component: About}
 ])
 
-export class App {}
+export class App {
+  constructor(router: Router) {
+
+  }
+}
 
 bootstrap(App, [
   ROUTER_PROVIDERS,

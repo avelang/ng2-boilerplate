@@ -1,5 +1,5 @@
 const map: any = {
-    'app':                        'app',
+    'app':                        'app', // 'dist',
     'src':                        'src',
     'rxjs':                       'lib/rxjs',
     '@angular':                   'lib/@angular'
@@ -20,7 +20,7 @@ const packageNames: string[] = [
     '@angular/http',
     '@angular/platform-browser',
     '@angular/platform-browser-dynamic',
-    '@angular/router-deprecated',
+    '@angular/router',
     '@angular/testing',
     '@angular/upgrade',
   ];
